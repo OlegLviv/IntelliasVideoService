@@ -1,4 +1,7 @@
-﻿namespace IVS.Data.Entities
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace IVS.Data.Entities
 {
     public class UsersToFlows
     {
@@ -10,6 +13,7 @@
 
         public Flow Flow { get; set; }
 
+        [JsonConverter(typeof(StringEnumConverter))]
         public Priority Priority { get; set; }
     }
 }

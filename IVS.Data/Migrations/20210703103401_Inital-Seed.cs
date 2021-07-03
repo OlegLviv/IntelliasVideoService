@@ -2,7 +2,7 @@
 
 namespace IVS.Data.Migrations
 {
-    public partial class Init : Migration
+    public partial class InitalSeed : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -201,6 +201,229 @@ namespace IVS.Data.Migrations
                         principalTable: "Videos",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Flows",
+                column: "Id",
+                values: new object[]
+                {
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                });
+
+            migrationBuilder.InsertData(
+                table: "Groups",
+                column: "Id",
+                values: new object[]
+                {
+                    9,
+                    8,
+                    7,
+                    6,
+                    1,
+                    4,
+                    3,
+                    2,
+                    5
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                column: "Id",
+                values: new object[]
+                {
+                    7,
+                    9,
+                    8,
+                    6,
+                    10,
+                    4,
+                    3,
+                    2,
+                    1,
+                    5
+                });
+
+            migrationBuilder.InsertData(
+                table: "Videos",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { 16, "Video 16" },
+                    { 17, "Video 17" },
+                    { 18, "Video 18" },
+                    { 19, "Video 19" },
+                    { 20, "Video 20" },
+                    { 21, "Video 21" },
+                    { 23, "Video 23" },
+                    { 24, "Video 24" },
+                    { 25, "Video 25" },
+                    { 26, "Video 26" },
+                    { 27, "Video 27" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Videos",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { 28, "Video 28" },
+                    { 22, "Video 22" },
+                    { 15, "Video 15" },
+                    { 13, "Video 13" },
+                    { 12, "Video 12" },
+                    { 11, "Video 11" },
+                    { 10, "Video 10" },
+                    { 9, "Video 9" },
+                    { 8, "Video 8" },
+                    { 7, "Video 7" },
+                    { 6, "Video 6" },
+                    { 5, "Video 5" },
+                    { 4, "Video 4" },
+                    { 3, "Video 3" },
+                    { 2, "Video 2" },
+                    { 1, "Video 1" },
+                    { 29, "Video 29" },
+                    { 14, "Video 14" },
+                    { 30, "Video 30" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "FlowsToVideos",
+                columns: new[] { "FlowId", "VideoId" },
+                values: new object[,]
+                {
+                    { 4, 7 },
+                    { 4, 5 },
+                    { 12, 30 },
+                    { 5, 9 },
+                    { 5, 10 },
+                    { 5, 11 },
+                    { 6, 12 },
+                    { 6, 13 },
+                    { 6, 14 },
+                    { 11, 15 },
+                    { 11, 16 },
+                    { 11, 17 },
+                    { 3, 4 },
+                    { 7, 18 },
+                    { 7, 20 },
+                    { 8, 21 },
+                    { 8, 22 },
+                    { 8, 23 },
+                    { 9, 23 },
+                    { 9, 24 },
+                    { 9, 25 },
+                    { 10, 26 },
+                    { 10, 27 },
+                    { 10, 28 },
+                    { 12, 29 },
+                    { 7, 19 },
+                    { 1, 3 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "GroupsToFlows",
+                columns: new[] { "FlowId", "GroupId", "Priority" },
+                values: new object[,]
+                {
+                    { 3, 4, 1 },
+                    { 4, 5, 2 },
+                    { 10, 7, 2 },
+                    { 11, 8, 1 },
+                    { 12, 8, 2 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "GroupsToVideos",
+                columns: new[] { "GroupId", "VideoId", "Priority" },
+                values: new object[,]
+                {
+                    { 7, 22, 1 },
+                    { 9, 15, 3 },
+                    { 6, 12, 0 },
+                    { 9, 17, 3 },
+                    { 6, 9, 2 },
+                    { 5, 8, 1 },
+                    { 7, 24, 2 },
+                    { 9, 16, 3 },
+                    { 1, 2, 2 },
+                    { 3, 4, 2 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "GroupsToVideos",
+                columns: new[] { "GroupId", "VideoId", "Priority" },
+                values: new object[] { 2, 3, 2 });
+
+            migrationBuilder.InsertData(
+                table: "UsersToFlows",
+                columns: new[] { "FlowId", "UserId", "Priority" },
+                values: new object[,]
+                {
+                    { 1, 3, 3 },
+                    { 7, 7, 0 },
+                    { 8, 7, 0 },
+                    { 9, 7, 1 },
+                    { 11, 10, 2 },
+                    { 6, 6, 2 },
+                    { 2, 4, 3 },
+                    { 5, 6, 0 },
+                    { 12, 9, 0 },
+                    { 4, 5, 1 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "UsersToGroups",
+                columns: new[] { "GroupId", "UserId" },
+                values: new object[,]
+                {
+                    { 4, 4 },
+                    { 2, 3 },
+                    { 5, 5 },
+                    { 7, 7 },
+                    { 7, 10 },
+                    { 3, 4 },
+                    { 8, 7 },
+                    { 7, 8 },
+                    { 9, 8 },
+                    { 1, 2 },
+                    { 7, 9 },
+                    { 8, 9 },
+                    { 6, 6 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "UsersToVideos",
+                columns: new[] { "UserId", "VideoId", "Priority" },
+                values: new object[,]
+                {
+                    { 8, 22, 0 },
+                    { 8, 23, 0 },
+                    { 1, 1, 0 },
+                    { 7, 17, 2 },
+                    { 8, 16, 0 },
+                    { 7, 16, 0 },
+                    { 7, 15, 1 },
+                    { 5, 7, 0 },
+                    { 5, 6, 2 },
+                    { 5, 5, 1 },
+                    { 4, 4, 0 },
+                    { 3, 3, 0 },
+                    { 2, 2, 0 },
+                    { 8, 21, 1 },
+                    { 10, 30, 3 }
                 });
 
             migrationBuilder.CreateIndex(
