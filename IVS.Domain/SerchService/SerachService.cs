@@ -80,7 +80,7 @@ namespace IVS.Domain.SerchService
                 .ToListAsync();
 
             var groupFlowVideos = await serviceDbContext.Flows.SelectMany(f => 
-                f.FlowsToVideos.Where(f => groupFlows.Select(s => s.FlowId).Contains(f.FlowId))
+                f.FlowsToVideos.Where(f => f.VideoId == videoId && groupFlows.Select(s => s.FlowId).Contains(f.FlowId))
                     .Select(s => new { s.FlowId, s.VideoId }))
                 .ToListAsync();
 
