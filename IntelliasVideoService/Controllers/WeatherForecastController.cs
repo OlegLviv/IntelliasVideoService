@@ -29,9 +29,9 @@ namespace IntelliasVideoService.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<VideoViewModel> Get()
+        public IEnumerable<PathViewModel> Get()
         {
-            var res = serachService.GetUserVideos(3).GetAwaiter().GetResult();
+            var res = serachService.GetUserVideosWithPathAsync(5,7).GetAwaiter().GetResult();
             return res;
             //var rng = new Random();
             //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
