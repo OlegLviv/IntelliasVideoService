@@ -24,7 +24,7 @@ namespace IntelliasVideoService
         {
             //var connectionString = "Server=tcp:ivsdb.database.windows.net,1433;Initial Catalog=ivsdb;Persist Security Info=False;User ID=lolik;Password=love2021-+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
-            var connectionString = "@Server=db;Database=master;User=sa;Password=Your_password123;";
+            var connectionString = @"Server=db;Database=master;User=sa;Password=Your_password123;";
 
             services.AddDbContext<ServiceDbContext>(options => options.UseSqlServer(connectionString));
 
