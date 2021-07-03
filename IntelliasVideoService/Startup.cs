@@ -1,4 +1,5 @@
 using IVS.Data.DataContext;
+using IVS.Domain.SerchService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,8 @@ namespace IntelliasVideoService
             var connectionString = "Server=tcp:ivsdb.database.windows.net,1433;Initial Catalog=ivsdb;Persist Security Info=False;User ID=lolik;Password=love2021-+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             services.AddDbContext<ServiceDbContext>(options => options.UseSqlServer(connectionString));
+
+            services.AddTransient<ISerachService, SerachService>();
 
             services.AddControllers()
                 .AddNewtonsoftJson(options =>

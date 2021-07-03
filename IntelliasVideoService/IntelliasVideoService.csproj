@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IVS.Data\IVS.Data.csproj" />
+    <ProjectReference Include="..\IVS.Domain\IVS.Domain.csproj" />
   </ItemGroup>
 
 </Project>

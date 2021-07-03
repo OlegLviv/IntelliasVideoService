@@ -60,3 +60,5 @@ C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IntelliasVideoServi
 C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IntelliasVideoService\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IntelliasVideoService\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IntelliasVideoService\bin\Debug\net5.0\Data.json
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IntelliasVideoService\bin\Debug\net5.0\IVS.Domain.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IntelliasVideoService\bin\Debug\net5.0\IVS.Domain.pdb

@@ -34,6 +34,7 @@
       "IntelliasVideoService/1.0.0": {
         "dependencies": {
           "IVS.Data": "1.0.0",
+          "IVS.Domain": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.7",
           "Microsoft.EntityFrameworkCore": "5.0.7",
           "Microsoft.EntityFrameworkCore.Design": "5.0.7",
@@ -1283,6 +1284,17 @@
         },
         "compile": {
           "IVS.Data.dll": {}
+        }
+      },
+      "IVS.Domain/1.0.0": {
+        "dependencies": {
+          "IVS.Data": "1.0.0"
+        },
+        "runtime": {
+          "IVS.Domain.dll": {}
+        },
+        "compile": {
+          "IVS.Domain.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3645,6 +3657,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "IVS.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IVS.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

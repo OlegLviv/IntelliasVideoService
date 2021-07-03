@@ -1,0 +1,15 @@
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\bin\Debug\net5.0\IVS.Domain.deps.json
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\bin\Debug\net5.0\IVS.Domain.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\bin\Debug\net5.0\ref\IVS.Domain.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\bin\Debug\net5.0\IVS.Domain.pdb
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\bin\Debug\net5.0\IVS.Data.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\bin\Debug\net5.0\IVS.Data.pdb
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.csprojAssemblyReference.cache
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.AssemblyInfoInputs.cache
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.AssemblyInfo.cs
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.csproj.CopyComplete
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\ref\IVS.Domain.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Domain\obj\Debug\net5.0\IVS.Domain.pdb

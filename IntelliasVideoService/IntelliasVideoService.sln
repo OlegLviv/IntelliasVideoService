@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliasVideoService", "IntelliasVideoService.csproj", "{F5328280-1FD8-4601-96BE-4605C67BE9B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntelliasVideoService", "IntelliasVideoService.csproj", "{F5328280-1FD8-4601-96BE-4605C67BE9B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IVS.Data", "..\IVS.Data\IVS.Data.csproj", "{6E65DC79-5EBC-454A-8E46-75A22E3C72DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IVS.Data", "..\IVS.Data\IVS.Data.csproj", "{6E65DC79-5EBC-454A-8E46-75A22E3C72DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IVS.Domain", "..\IVS.Domain\IVS.Domain.csproj", "{D7AAD0B1-CB5C-4FAE-BE84-113A2A2EA742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6E65DC79-5EBC-454A-8E46-75A22E3C72DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E65DC79-5EBC-454A-8E46-75A22E3C72DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E65DC79-5EBC-454A-8E46-75A22E3C72DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AAD0B1-CB5C-4FAE-BE84-113A2A2EA742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AAD0B1-CB5C-4FAE-BE84-113A2A2EA742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AAD0B1-CB5C-4FAE-BE84-113A2A2EA742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AAD0B1-CB5C-4FAE-BE84-113A2A2EA742}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
