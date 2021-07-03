@@ -22,7 +22,9 @@ namespace IntelliasVideoService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = "Server=tcp:ivsdb.database.windows.net,1433;Initial Catalog=ivsdb;Persist Security Info=False;User ID=lolik;Password=love2021-+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            //var connectionString = "Server=tcp:ivsdb.database.windows.net,1433;Initial Catalog=ivsdb;Persist Security Info=False;User ID=lolik;Password=love2021-+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+            var connectionString = "@Server=db;Database=master;User=sa;Password=Your_password123;";
 
             services.AddDbContext<ServiceDbContext>(options => options.UseSqlServer(connectionString));
 
@@ -42,8 +44,6 @@ namespace IntelliasVideoService
             }
 
             app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
