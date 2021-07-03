@@ -14,7 +14,7 @@ namespace IVS.Domain.SerchService
         public SerachService(ServiceDbContext serviceDbContext)
             => this.serviceDbContext = serviceDbContext;
 
-        public async Task<IEnumerable<VideoViewModel>> GetUserVideosAsync(int userId)
+        public async Task<IEnumerable<VideoViewModel>> GetUserVideosAsync(string priority, int userId)
         {
             var userVideos = await serviceDbContext.Users.SelectMany(u => u.UsersToVideos.Where(u => u.UserId == userId).Select(s => new { s.VideoId, s.Priority }))
                 .ToListAsync();
@@ -55,10 +55,10 @@ namespace IVS.Domain.SerchService
 
             var ordered = userVideos.GroupBy(s => s.VideoId).Select(s => new VideoViewModel { Priority = s.Max(s => s.Priority), VideoId = s.Key });
 
-            return ordered;
+            return priority == "asc" ? ordered.OrderBy(s => s.Priority) : ordered.OrderByDescending(s => s.Priority);
         }
 
-        public async Task<IEnumerable<PathViewModel>> GetUserVideosWithPathAsync(int userId, int videoId)
+        public async Task<IEnumerable<PathViewModel>> GetUserVideosWithPathAsync(string priority, int userId, int videoId)
         {
             var userVideosPath = await serviceDbContext.Users.SelectMany(u => 
                 u.UsersToVideos.Where(u => u.UserId == userId && u.VideoId == videoId)
@@ -97,7 +97,9 @@ namespace IVS.Domain.SerchService
             userVideosPath.AddRange(flowsWithPath);
             userVideosPath.AddRange(groupVideosPath);
 
-            return userVideosPath.Select(s => new PathViewModel { Path = s.Path, Priority = s.Priority });
+            var viewModel = userVideosPath.Select(s => new PathViewModel { Path = s.Path, Priority = s.Priority });
+
+            return priority == "asc" ? viewModel.OrderBy(s => s.Priority) : viewModel.OrderByDescending(s => s.Priority);
         }
     }
 }

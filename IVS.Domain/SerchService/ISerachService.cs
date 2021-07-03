@@ -6,8 +6,8 @@ namespace IVS.Domain.SerchService
 {
     public interface ISerachService
     {
-        Task<IEnumerable<VideoViewModel>> GetUserVideosAsync(int userId);
+        Task<IEnumerable<VideoViewModel>> GetUserVideosAsync(string priority, int userId);
 
-        Task<IEnumerable<PathViewModel>> GetUserVideosWithPathAsync(int userId, int videoId);
+        Task<IEnumerable<PathViewModel>> GetUserVideosWithPathAsync(string priority, int userId, int videoId);
     }
 }

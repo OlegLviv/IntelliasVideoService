@@ -18,16 +18,16 @@ namespace IntelliasVideoService.Controllers
         }
 
         [HttpGet("{userId}/videos")]
-        public async Task<IEnumerable<VideoViewModel>> GetUserVideosAsync(int userId)
+        public async Task<IEnumerable<VideoViewModel>> GetUserVideosAsync([FromQuery] string priority, int userId)
         {
-            var res = await serachService.GetUserVideosAsync(userId);
+            var res = await serachService.GetUserVideosAsync(priority, userId);
             return res;
         }
 
         [HttpGet("{userId}/videos/{videoId}")]
-        public async Task<IEnumerable<PathViewModel>> GetUserVideosPathAsync(int userId, int videoId)
+        public async Task<IEnumerable<PathViewModel>> GetUserVideosPathAsync([FromQuery] string priority, int userId, int videoId)
         {
-            var res = await serachService.GetUserVideosWithPathAsync(userId, videoId);
+            var res = await serachService.GetUserVideosWithPathAsync(priority, userId, videoId);
             return res;
         }
     }
