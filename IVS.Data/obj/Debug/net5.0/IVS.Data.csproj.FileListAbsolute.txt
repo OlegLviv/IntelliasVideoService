@@ -12,3 +12,4 @@ C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\
 C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\IVS.Data.runtimeconfig.json
 C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\IVS.Data.runtimeconfig.dev.json
 C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.genruntimeconfig.cache
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.csprojAssemblyReference.cache

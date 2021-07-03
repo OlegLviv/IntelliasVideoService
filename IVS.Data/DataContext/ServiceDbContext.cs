@@ -121,7 +121,7 @@ namespace IVS.Data.DataContext
             modelBuilder.Entity<FlowsToVideos>()
                 .HasData(data.FlowsToVideos);
 
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
         }
     }
 }
