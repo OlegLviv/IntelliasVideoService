@@ -1,0 +1,14 @@
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\IVS.Data.deps.json
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\IVS.Data.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\ref\IVS.Data.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\IVS.Data.pdb
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.AssemblyInfoInputs.cache
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.AssemblyInfo.cs
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.csproj.CoreCompileInputs.cache
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\ref\IVS.Data.dll
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.pdb
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\IVS.Data.runtimeconfig.json
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\bin\Debug\net5.0\IVS.Data.runtimeconfig.dev.json
+C:\Users\okuntso\source\repos\OlegLviv\IntelliasVideoService\IVS.Data\obj\Debug\net5.0\IVS.Data.genruntimeconfig.cache

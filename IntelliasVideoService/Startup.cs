@@ -1,14 +1,10 @@
+using IVS.Data.DataContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace IntelliasVideoService
 {
@@ -24,6 +20,9 @@ namespace IntelliasVideoService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = "Server=tcp:ivsdb.database.windows.net,1433;Initial Catalog=ivsdb;Persist Security Info=False;User ID=lolik;Password=love2021-+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+            services.AddDbContext<ServiceDbContext>(options => options.UseSqlServer(connectionString));
 
             services.AddControllers();
         }
